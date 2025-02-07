@@ -1,11 +1,20 @@
+#### Pages responsive
+<img src="./screens/adv.png" alt="não carregou" />
+
+
+### Dependências
+npm install gsap
+
+
+https://www.npmjs.com/package/gsap
 
 
 npm install motion
 
-npm i framer-motion
+npm install aos             
+npm i --save-dev @types/aos
 
-npm i swiper
+npm run build
 
-https://www.youtube.com/watch?v=pVtWpUWzBdk
+https://codesandbox.io/p/sandbox/framer-motion-3d-usescroll-xibe0t?file=%2Fsrc%2FApp.tsx&from-embed
 
-https://www.youtube.com/watch?v=S5uQA-2NspY&t=316s

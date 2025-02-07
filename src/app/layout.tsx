@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import { AosInit } from "@/components/aos.init";
 
-const poppins = Poppins({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: [ "200", "400", "600", "800", "900"]
-})
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "Mazza Fashion",
-  description: "Representação Marcas Calvin",
+  title: "Mazza",
+  description: "Mazza Fashion",
 };
 
 export default function RootLayout({
@@ -19,13 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={
-          `${poppins.className} 
-          antialiased bg-zinc-900 text-white h-screen w-screen
-        `}>
-          <Navbar />
+    <html lang="pt-br">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased w-[100vw] bg-black`}>
         {children}
+        <AosInit />
       </body>
     </html>
   );
