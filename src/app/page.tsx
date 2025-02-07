@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex gap-5 justify-center w-screen mx-auto h-screen max-w-[1366px]">
       <div className="h-28 bg-slate-900 flex justify-between fixed top-0 z-10">
-        <img src="images/Logo.png" alt="" data-aos="fade-left" />
+        <img src="images/Logo.png" width={200} alt="" data-aos="fade-left" />
         <ul data-aos="fade-down" className="md:flex hidden mt-5 ml-10 gap-5 items-center justify-center text-white text-2xl">
           <li className="nav-item">Camisetas</li>
           <li className="nav-item">Calças</li>
@@ -16,7 +16,7 @@ export default function Home() {
         <a href="https://api.whatsapp.com/send?phone=5562982350030&text=Quero%20fazer%20um%20agendamento%20hoje!"
           target="_blank">
           <button data-aos="fade-right" className="">
-            <img src="zap.png" alt="" className="animate-pulse w-44" />
+            <img src="zap.png" alt="" width={50} className="animate-pulse w-44" />
           </button>
         </a>
 
